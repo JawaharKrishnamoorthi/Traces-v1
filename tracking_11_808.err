@@ -8,7 +8,7 @@
 >>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 66(25,34): Variable never used:   timeout_3
 >>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 66(37,43): Variable never used:   r_boot
 >>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 79(15,20): Variable never used:   stats
->>> Warning 202 "tracking_11_808.c" Line 464(18,21): Variable never used:   vv3
-      Memory usage:   ROM=33%      RAM=12% - 17%
+>>> Warning 202 "tracking_11_808.c" Line 465(18,21): Variable never used:   vv3
+      Memory usage:   ROM=33%      RAM=11% - 16%
       0 Errors,  11 Warnings.
 Build Successful.

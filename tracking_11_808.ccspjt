@@ -9,7 +9,7 @@ enabled=0
 chip=1
 D1=
 V1=
-buildcount=1
+buildcount=21
 
 [fileformats]
 forcecoff=0
@@ -60,17 +60,101 @@ AdditionalOptionString=
 Fixed=
 
 [Opened Files]
-Count=1
+Count=2
 1=tracking_11_808.c
-t1=299
+t1=1
+2=gsm_7.h
+t2=1
+3=C:\Program Files (x86)\PICC\Drivers\string.h
+t3=138
 
 [ProjectLog]
 Days=1
 D1=07-08-2017
-D1_L=3
+D1_L=61
 D1_L1=[41858]Project Closed.
 D1_L2=[41858]Project Opened.
 D1_L3=[42008]Started Editing.
+D1_L4=[42309]Stopped Editing.
+D1_L5=[43277]Started Editing.
+D1_L6=[43578]Stopped Editing.
+D1_L7=[51138]Project Opened.
+D1_L8=[51222]Started Debugging.
+D1_L9=[51407]Stopped Debugging.
+D1_L10=[51407]Started Editing.
+D1_L11=[51484]Stopped Editing.
+TotalEdit=13
+TotalDebug=17
+D1_E=13
+D1_D=17
+D1_L12=[51484]Project Closed.
+D1_L13=[51490]Project Opened.
+D1_L14=[52144]Project Closed.
+D1_L15=[52150]Project Opened.
+D1_L16=[52157]Project Closed.
+D1_L17=[52163]Project Opened.
+D1_L18=[52194]Project Closed.
+D1_L19=[52194]Project Opened.
+D1_L20=[52215]Project Closed.
+D1_L21=[52227]Project Opened.
+D1_L22=[52263]Project Closed.
+D1_L23=[52268]Project Opened.
+D1_L24=[52344]Project Opened.
+D1_L25=[52389]Started Debugging.
+D1_L26=[52552]Stopped Debugging.
+D1_L27=[52552]Started Editing.
+D1_L28=[52735]Stopped Editing.
+D1_L29=[52735]Started Debugging.
+D1_L30=[52807]Stopped Debugging.
+D1_L31=[52808]Project Closed.
+D1_L32=[52808]Project Opened.
+D1_L33=[52838]Started Editing.
+D1_L34=[52875]Stopped Editing.
+D1_L35=[52875]Project Closed.
+D1_L36=[52883]Project Opened.
+D1_L37=[52892]Project Closed.
+D1_L38=[52904]Project Opened.
+D1_L39=[52964]Started Debugging.
+D1_L40=[53215]Project Opened.
+D1_L41=[53232]Started Editing.
+D1_L42=[53460]Stopped Editing.
+D1_L43=[53461]Project Closed.
+D1_L44=[53480]Project Opened.
+D1_L45=[53637]Started Debugging.
+D1_L46=[54193]Project Opened.
+D1_L47=[54443]Project Closed.
+D1_L48=[55971]Project Opened.
+D1_L49=[56024]Started Editing.
+D1_L50=[56063]Stopped Editing.
+D1_L51=[56063]Started Debugging.
+D1_L52=[56544]Stopped Debugging.
+D1_L53=[56544]Started Editing.
+D1_L54=[56619]Stopped Editing.
+D1_L55=[56619]Project Closed.
+D1_L56=[56627]Project Opened.
+D1_L57=[56634]Project Closed.
+D1_L58=[56644]Project Opened.
+D1_L59=[56694]Started Debugging.
+D1_L60=[57362]Stopped Debugging.
+D1_L61=[57472]Started Debugging.
+
+[debugperif]
+selected=Analog to Digital Converter 1
+
+[debugbreak]
+count=1
+f1=F:\products\gps tracker\traces\Traces-v1\gsm_7.h
+l1=214
+a.1=1826
+
+[debugwatch]
+count=2
+e1=string
+e2=num_attempt
+
+[debugexpr]
+expr=
+sideeffects=1
 [Units]
 Count=1
 1=tracking_11_808 (main)

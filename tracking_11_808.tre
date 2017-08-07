@@ -1,8 +1,23 @@
 ÀÄtracking_11_808
-   ÃÄMAIN  0/1148  Ram=0
+   ÃÄMAIN  0/1168  Ram=0
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@delay_ms1  0/16  Ram=0
    ³  ÃÄ@delay_ms1  0/16  Ram=0
+   ³  ÃÄinit_gsm_1  0/216  Ram=2
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄexception  0/266  Ram=2
+   ³  ³  ³  ÃÄ@const1629  0/22  Ram=1
+   ³  ³  ³  ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³  ³  ³  ÃÄtimed_getc  0/60  Ram=1
+   ³  ³  ³  ³  ÀÄ@GETCH_BIU_2  0/14  Ram=0
+   ³  ³  ³  ÃÄstrncmp  0/72  Ram=7
+   ³  ³  ³  ÀÄstrncmp  0/72  Ram=7
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1620  0/28  Ram=0
+   ³  ³  ÀÄexception  0/266  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄinit_gsm_1  0/216  Ram=2
+   ³  ³  ÀÄ*
    ³  ÃÄ@delay_ms1  0/16  Ram=0
    ³  ÃÄ@const1621  0/20  Ram=0
    ³  ÃÄ@const1728  0/22  Ram=0
@@ -17,16 +32,11 @@
    ³  ÀÄ@const1734  0/24  Ram=0
    ÃÄboot  0/134  Ram=0
    ³  ÃÄ@const1705  0/22  Ram=0
-   ³  ÃÄinit_gsm  0/642  Ram=2
+   ³  ÃÄinit_gsm  0/660  Ram=2
    ³  ³  ÃÄstrncpy  0/56  Ram=8
    ³  ³  ÃÄ@const1621  0/20  Ram=0
    ³  ³  ÃÄexception  0/266  Ram=2
-   ³  ³  ³  ÃÄ@const1629  0/22  Ram=1
-   ³  ³  ³  ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
-   ³  ³  ³  ÃÄtimed_getc  0/60  Ram=1
-   ³  ³  ³  ³  ÀÄ@GETCH_BIU_2  0/14  Ram=0
-   ³  ³  ³  ÃÄstrncmp  0/72  Ram=7
-   ³  ³  ³  ÀÄstrncmp  0/72  Ram=7
+   ³  ³  ³  ÀÄ*
    ³  ³  ÃÄstrncpy  0/56  Ram=8
    ³  ³  ÃÄstrncpy  0/56  Ram=8
    ³  ³  ÃÄ@const1622  0/24  Ram=0

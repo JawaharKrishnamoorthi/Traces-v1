@@ -47,7 +47,7 @@ boolean timeout_error=false,timeout_error_2=false,last_a=0,last_a4=0,p_s=0;
 int8 j=0,post_var=0,init_var=0,nd=0;
 unsigned char string2[30]={},v3=0;
 unsigned char string6[30]={};
-unsigned char num_attempt=0;
+int8 num_attempt=0;
 unsigned char set=0x22,enter=0x0d,sent=0x1a,lf=0x0a;
 unsigned char ACK_OK[3]="OK",APN_RE[18]="CSTTairtelgprscom",STATUS_RE[17]="OKSTATEIPINITIAL",STATUS_CON[12]="OKCONNECTOK";
 unsigned char GSM_STATE[8]="CGREG01",GSM_STATE_R[8]="CGREG05";
@@ -87,7 +87,7 @@ int init_gsm_1(int dat)
             if(!exception(2,2))
             {     
                num_attempt+=1;
-               if(num_attempt>50){output_high(fet1);reset_cpu();}               
+               if(num_attempt>20){output_high(fet1);reset_cpu();}               
                return 0;   
                break;
             }
@@ -100,7 +100,7 @@ int init_gsm_1(int dat)
             if(!exception(2,2))
             {     
                num_attempt+=1;
-               if(num_attempt>50){output_high(fet1);reset_cpu();}               
+               if(num_attempt>20){output_high(fet1);reset_cpu();}               
                return 0;   
                break;
             }
@@ -138,7 +138,7 @@ switch (dat)
                if(!exception(7,7))
                {
                   num_attempt+=1;
-                  if(num_attempt>50){output_high(fet1);reset_cpu();}   
+                  if(num_attempt>20){output_high(fet1);reset_cpu();}   
                   return 0; 
                   break;
                }else{
@@ -225,7 +225,7 @@ char timed_getc() {
    timeout_error=FALSE;
    timeout=0;
    while(!kbhit(GSM) && (++timeout<timeout_v)) // 1/2 // second
-          delay_us(10);
+          delay_us(5);
    if(kbhit(GSM)) {      
           return(getc(GSM));}
    else {

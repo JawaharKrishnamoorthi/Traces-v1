@@ -1,12 +1,13 @@
 
 #include <24fj64ga002.h>
 #device ADC=10
+//#device ICD=TRUE
 #use delay(clock=16000000)
 #use rtos(timer=1,minor_cycle=100ms,statistics)//
 
 #use fixed_io(b_outputs=PIN_b6)
 #fuses nowdt,protect,FRC_PLL
-#build (stack=256)
+//#build (stack=256)
 
 #define fet1 PIN_b6//d5
 //#define fet2 PIN_b14//d4
@@ -293,7 +294,7 @@ void main ( )
 //   output_low(led1);output_high(led2);
 //   output_low(led4);output_high(led3);
   // fprintf(GPS"Hello World");
-
+   if(init_gsm_1(1))init_gsm_1(2); 
    switch ( restart_cause() ) {
    case RESTART_POWER_UP:delay_ms(10000); 
 //                        if(init_gsm_1(1))init_gsm_1(2);                        
@@ -310,7 +311,7 @@ void main ( )
                         break; 
    case RESTART_SOFTWARE:fprintf(BUG,"BOOT 3\n\r");
                         break; 
-   case RESTART_MCLR :  fprintf(BUG,"BOOT 4\n\r");
+   case RESTART_MCLR :  fprintf(BUG,"BOOT 4\n\r");                        
                         break;   
    case RESTART_ILLEGAL_OP:fprintf(BUG,"BOOT 5\n\r");
                         break;
