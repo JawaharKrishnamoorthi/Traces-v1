@@ -49,9 +49,9 @@ float conversion2(float yyy);
 
 void boot()
 {  
-   fprintf(BUG,"-TASK1-\n\r");    
+   fprintf(BUG"-TASK1-\n\r");    
    ack_log=init_gsm(jl); 
-   fprintf(BUG,"ACK-%u\n\r",ack_log);    
+   fprintf(BUG"ACK-%u\n\r",ack_log);    
    if(ack_log){jl++;}
    if(jl>=4){
       init_var=1;
@@ -67,7 +67,7 @@ void boot()
 void process_data()
 {  
     process();     
-    fprintf(BUG,"*");  
+    fprintf(BUG"*");  
 }
 
 void gps_rx()
@@ -84,14 +84,14 @@ void gps_rx()
       }
       if(string3 [0] == 'C' && string3 [j] == 0x0d){
          timeout_error_2 = true;
-         fprintf(BUG,"LL-%s,%02u\n\r",string3,j);   
+         fprintf(BUG"LL-%s,%02u\n\r",string3,j);   
       }        
-//      fprintf(BUG,"LL-%s,%c\n\r",string3,string3[j]);   
+//      fprintf(BUG"LL-%s,%c\n\r",string3,string3[j]);   
 //   }
    if(timeout_error){
    j=0;
    string3 [0] = 0;
-   fprintf(BUG,"TO\r\n");
+   fprintf(BUG"TO\r\n");
    }   
 }
 
@@ -102,18 +102,18 @@ void post_data()
    output_bit(fet1,0);
    if(post_var==1 && init_var==1){   
    ack_log1=cip_start();   
-//   fprintf(BUG,"PF-%u\n\r",post_fail_count);    
+//   fprintf(BUG"PF-%u\n\r",post_fail_count);    
    if(ack_log1==81)
    {  
       cip_send();
-      fprintf(BUG,"Stage 1\n\r");
+      fprintf(BUG"Stage 1\n\r");
       rtos_await(ack_1('>'));
       if(timeout_error!=TRUE){
       post();
-      fprintf(BUG,"Stage 2\n\r");
+      fprintf(BUG"Stage 2\n\r");
       rtos_await(ack_1('1'));
       if(timeout_error!=TRUE)
-      fprintf(BUG,"Stage 3\n\r");
+      fprintf(BUG"Stage 3\n\r");
       }
       cip_close();  
       old_la=new_la;
@@ -135,7 +135,7 @@ void post_data()
    ack_log1=0;      
    }// else {delay_ms(25);}
 //   rtos_stats(post_data,&stats);
-//   fprintf(BUG,"TASK4:%lu-%lu-%lu-%lu",stats.task_total_ticks,stats.task_min_ticks,stats.task_max_ticks,stats.hns_per_tick); 
+//   fprintf(BUG"TASK4:%lu-%lu-%lu-%lu",stats.task_total_ticks,stats.task_min_ticks,stats.task_max_ticks,stats.hns_per_tick); 
    //  rtos_stats(post_data);
 }
 
@@ -186,7 +186,7 @@ boolean x,x1;
 /*
 void post_status()
 {
-   fprintf(BUG,"ST\n\r"); 
+   fprintf(BUG"ST\n\r"); 
    ack_log1=cip_start();      
    if(ack_log1==81)
    {     
@@ -220,7 +220,7 @@ void NMEA_GPRMC()
       
 //      if(i_date < 500)
 //      i_date = atoi32(s_date1);
-      fprintf(BUG,"GC-%s,%s,%s\n\r",s_time,lat,lon); 
+      fprintf(BUG"GC-%s,%s,%s\n\r",s_time,lat,lon); 
 }
 
 void NMEA_GPVTG()
@@ -230,7 +230,7 @@ void NMEA_GPVTG()
       ptr = strtok(0, term);  
       nd++;
       }
-//      fprintf(BUG,"GV-%s\n\r",speed_k);   
+//      fprintf(BUG"GV-%s\n\r",speed_k);   
 }
 
 void NMEA_GPGLL()
@@ -245,7 +245,7 @@ void NMEA_GPGLL()
       f_lat = atof48(lat);
       f_lon = atof48(lon);
       f_time = atoi32(s_time);
-//      fprintf(BUG,"GL-%s,%s,%s\n\r",time,lat,lon);    
+//      fprintf(BUG"GL-%s,%s,%s\n\r",time,lat,lon);    
 }
 
 void NMEA_GPGGA()
@@ -260,7 +260,7 @@ void NMEA_GPGGA()
       f_lat = atof48(lat);
       f_lon = atof48(lon);
       f_time = atoi32(s_time);
-//      fprintf(BUG,"GA-%s,%s,%s\n\r",s_time,lat,lon);   
+//      fprintf(BUG"GA-%s,%s,%s\n\r",s_time,lat,lon);   
 }
 
 //------------------------------------------------------------------------------
@@ -297,24 +297,24 @@ void main ( )
    switch ( restart_cause() ) {
    case RESTART_POWER_UP:delay_ms(10000); 
 //                        if(init_gsm_1(1))init_gsm_1(2);                        
-                        fprintf(GSM,"ATE0%c",enter);
+                        fprintf(GSM"ATE0%c",enter);
 //                        init_gsm_1(2);
 //                        delay_ms(10);
-//                        fprintf(GSM,"AT+CGREG=1%c",enter);
+//                        fprintf(GSM"AT+CGREG=1%c",enter);
 //                        delay_ms(10);
 //                        reset_cpu();
                         break; 
-   case RESTART_BROWNOUT:fprintf(BUG,"BOOT 1\n\r");
+   case RESTART_BROWNOUT:fprintf(BUG"BOOT 1\n\r");
                         break; 
-   case RESTART_WATCHDOG:fprintf(BUG,"BOOT 2\n\r");  
+   case RESTART_WATCHDOG:fprintf(BUG"BOOT 2\n\r");  
                         break; 
-   case RESTART_SOFTWARE:fprintf(BUG,"BOOT 3\n\r");
+   case RESTART_SOFTWARE:fprintf(BUG"BOOT 3\n\r");
                         break; 
-   case RESTART_MCLR :  fprintf(BUG,"BOOT 4\n\r");
+   case RESTART_MCLR :  fprintf(BUG"BOOT 4\n\r");
                         break;   
-   case RESTART_ILLEGAL_OP:fprintf(BUG,"BOOT 5\n\r");
+   case RESTART_ILLEGAL_OP:fprintf(BUG"BOOT 5\n\r");
                         break;
-   case RESTART_TRAP_CONFLICT:fprintf(BUG,"BOOT 6\n\r");
+   case RESTART_TRAP_CONFLICT:fprintf(BUG"BOOT 6\n\r");
                         break;
    }  
 //   output_low(led1);
@@ -337,7 +337,7 @@ char sstring[110]={},nmea[8]="CGNSINF",nmea1[7]="$GPGLL",nmea2[7]="$GPGGA",nmea3
    if(timeout_error_2 == true){ 
    clng = strlen(string3);
    strcpy(sstring,string3);  
-   fprintf(BUG,"L-%s>%u\n\r",sstring,clng);                                          //&& string3[strlen (string3)] == 0x0a
+   fprintf(BUG"L-%s>%u\n\r",sstring,clng);                                          //&& string3[strlen (string3)] == 0x0a
    ptr = strtok(sstring, term);
    if(!strncmp(sstring,nmea,7) && clng >= 62)NMEA_GPRMC();   
    if(!strncmp(sstring,nmea1,6) && clng >= 30)NMEA_GPGLL();   
@@ -353,20 +353,20 @@ for(ip=0;ip<=j;ip++)
 //   new_ln = conversion2(f_lon);
    new_la = f_lat;
    new_ln = f_lon;
-//   fprintf(BUG,"GC-%lu,%lu,%2.5f,%2.5f\n\r",f_time,i_date,new_la,new_ln);    
+//   fprintf(BUG"GC-%lu,%lu,%2.5f,%2.5f\n\r",f_time,i_date,new_la,new_ln);    
 //---------------- TIME  ------------------------------------------------------            
   new_sec = f_time % 100;            
        v1 = f_time / 10000;            
   new_min = (f_time % 10000) / 100;
        v4 = (new_min * 60) + new_sec;
   new_hrs = v1 + (  v4 / 3600 );
-  fprintf(BUG,"%02u:%02u:%02u\n\r",v1,new_min,new_sec);      
-//  fprintf(BUG,"GT-%f\n\r",v4); 
+  fprintf(BUG"%02u:%02u:%02u\n\r",v1,new_min,new_sec);      
+//  fprintf(BUG"GT-%f\n\r",v4); 
 //-----------------DATE -------------------------------------------------------            
   date = i_date % 100;            
   year = i_date / 10000;            
   month = (i_date % 10000) / 100;       
-  fprintf(BUG,"%04lu/%02u/%02u\n\r",year,month,date); 
+  fprintf(BUG"%04lu/%02u/%02u\n\r",year,month,date); 
 //----------------INIT DATE/TME------------------------------------------------            
   if(old_hrs == null)
   old_hrs = new_hrs;
@@ -384,7 +384,7 @@ for(ip=0;ip<=j;ip++)
           }else {
            speed = distt / (new_hrs - old_hrs);
           }    
-//    fprintf(BUG,"Di-%0.5f,%0.5f\n\r",abs(old_la-new_la),old_ln-new_ln);
+//    fprintf(BUG"Di-%0.5f,%0.5f\n\r",abs(old_la-new_la),old_ln-new_ln);
     }else if(old_hrs != new_hrs && year >= 2016){
     post_var = 1; 
     dir = 0;

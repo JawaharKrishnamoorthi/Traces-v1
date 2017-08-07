@@ -1,0 +1,76 @@
+[Directories]
+Include=
+Library=
+LinkerScript=
+output=
+
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+buildcount=1
+
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+expandtree=0
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+
+[PROJECT]
+Target=tracking_11_808.hex
+Development_Mode=
+Processor_Text=PIC24FJ64GA002
+ToolSuite=CCS
+CCSVersion=5.074d
+Compiler=PCD
+
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FD
+AdditionalOptionString=
+BuildRequired=1
+FileList=tracking_11_808.c
+
+[tracking_11_808.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=tracking_11_808.c
+
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+
+
+[CompilerVersion]
+Fixed=
+
+[Opened Files]
+Count=1
+1=tracking_11_808.c
+t1=299
+
+[ProjectLog]
+Days=1
+D1=07-08-2017
+D1_L=3
+D1_L1=[41858]Project Closed.
+D1_L2=[41858]Project Opened.
+D1_L3=[42008]Started Editing.
+[Units]
+Count=1
+1=tracking_11_808 (main)

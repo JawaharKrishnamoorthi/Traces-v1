@@ -1,0 +1,14 @@
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 52(30,36): Variable never used:   APN_RE
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 52(61,70): Variable never used:   STATUS_RE
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 56(52,58): Variable never used:   s_date
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 56(62,69): Variable never used:   s_date1
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 61(27,30): Variable never used:   sec
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 62(5,12): Variable never used:   old_min
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 62(15,22): Variable never used:   old_sec
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 66(25,34): Variable never used:   timeout_3
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 66(37,43): Variable never used:   r_boot
+>>> Warning 202 "F:\products\gps tracker\traces\Traces-v1\gsm_7.h" Line 79(15,20): Variable never used:   stats
+>>> Warning 202 "tracking_11_808.c" Line 464(18,21): Variable never used:   vv3
+      Memory usage:   ROM=33%      RAM=12% - 17%
+      0 Errors,  11 Warnings.
+Build Successful.

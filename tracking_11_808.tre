@@ -1,0 +1,314 @@
+ÀÄtracking_11_808
+   ÃÄMAIN  0/1148  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@delay_ms1  0/16  Ram=0
+   ³  ÃÄ@delay_ms1  0/16  Ram=0
+   ³  ÃÄ@delay_ms1  0/16  Ram=0
+   ³  ÃÄ@const1621  0/20  Ram=0
+   ³  ÃÄ@const1728  0/22  Ram=0
+   ³  ÃÄ@const1729  0/22  Ram=0
+   ³  ÃÄ@const1730  0/22  Ram=0
+   ³  ÃÄ@const1731  0/22  Ram=0
+   ³  ÃÄ@const1732  0/22  Ram=0
+   ³  ÃÄ@const1733  0/22  Ram=0
+   ³  ÃÄ@const1734  0/24  Ram=0
+   ³  ÃÄ@const1734  0/24  Ram=0
+   ³  ÃÄ@const1734  0/24  Ram=0
+   ³  ÀÄ@const1734  0/24  Ram=0
+   ÃÄboot  0/134  Ram=0
+   ³  ÃÄ@const1705  0/22  Ram=0
+   ³  ÃÄinit_gsm  0/642  Ram=2
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1621  0/20  Ram=0
+   ³  ³  ÃÄexception  0/266  Ram=2
+   ³  ³  ³  ÃÄ@const1629  0/22  Ram=1
+   ³  ³  ³  ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³  ³  ³  ÃÄtimed_getc  0/60  Ram=1
+   ³  ³  ³  ³  ÀÄ@GETCH_BIU_2  0/14  Ram=0
+   ³  ³  ³  ÃÄstrncmp  0/72  Ram=7
+   ³  ³  ³  ÀÄstrncmp  0/72  Ram=7
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1622  0/24  Ram=0
+   ³  ³  ÃÄexception  0/266  Ram=2
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1623  0/24  Ram=0
+   ³  ³  ÃÄ@const1624  0/28  Ram=0
+   ³  ³  ÃÄexception  0/266  Ram=2
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1625  0/28  Ram=0
+   ³  ³  ÃÄ@const1626  0/28  Ram=0
+   ³  ³  ÃÄexception  0/266  Ram=2
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1627  0/24  Ram=0
+   ³  ³  ÃÄ@const1628  0/28  Ram=0
+   ³  ³  ÀÄexception  0/266  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄ@const1706  0/22  Ram=0
+   ³  ÀÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ÃÄprocess_data  0/26  Ram=0
+   ³  ÀÄprocess  0/1126  Ram=143
+   ³     ÃÄ@const1742  0/14  Ram=1
+   ³     ÃÄstrlen  0/28  Ram=5
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄstrtok  0/96  Ram=9
+   ³     ³  ÃÄstrspn  0/66  Ram=9
+   ³     ³  ÃÄstrpbrk  0/56  Ram=9
+   ³     ³  ÀÄstrlen  0/28  Ram=5
+   ³     ÃÄstrncmp  0/72  Ram=7
+   ³     ÃÄNMEA_GPRMC  0/294  Ram=1
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÃÄ@MULFF48  0/206  Ram=55
+   ³     ³  ³  ÃÄ@SI64TOF48  0/106  Ram=0
+   ³     ³  ³  ÃÄ@DIVFF48  0/214  Ram=54
+   ³     ³  ³  ÃÄ@ADDFF48  0/476  Ram=54
+   ³     ³  ³  ÃÄ@MULFF48  0/206  Ram=55
+   ³     ³  ³  ÃÄ@SI64TOF48  0/106  Ram=0
+   ³     ³  ³  ÃÄ@ADDFF48  0/476  Ram=54
+   ³     ³  ³  ÀÄ@MULFF48  0/206  Ram=55
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄatoi48  0/644  Ram=13
+   ³     ³  ÃÄ@DIVS4848  0/162  Ram=1
+   ³     ³  ÀÄ@DIVS4848  0/162  Ram=1
+   ³     ÃÄstrncmp  0/72  Ram=7
+   ³     ÃÄNMEA_GPGLL  0/128  Ram=1
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄatol  0/490  Ram=15
+   ³     ³     ÀÄ@MULS3232  0/66  Ram=1
+   ³     ÃÄstrncmp  0/72  Ram=7
+   ³     ÃÄNMEA_GPGGA  0/128  Ram=1
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄstrtof48  0/420  Ram=21
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄatol  0/490  Ram=15
+   ³     ³     ÀÄ*
+   ³     ÃÄstrncmp  0/72  Ram=7
+   ³     ÃÄNMEA_GPVTG  0/44  Ram=1
+   ³     ³  ÃÄstrtok  0/96  Ram=9
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄstrtok  0/96  Ram=9
+   ³     ³     ÀÄ*
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@SITOF  0/74  Ram=127
+   ³     ÃÄ@DIVFF  0/202  Ram=58
+   ³     ÃÄ@SITOF  0/74  Ram=127
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@DIVS3232A  0/126  Ram=0
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄdistance  0/434  Ram=41
+   ³     ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ÃÄsin  0/38  Ram=5
+   ³     ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ÀÄcos  0/372  Ram=42
+   ³     ³  ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@SFTOI  0/44  Ram=61
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@ITOF  0/58  Ram=128
+   ³     ³  ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³     ÀÄ@ADDFF  0/426  Ram=59
+   ³     ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ÃÄsin  0/38  Ram=5
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄcos  0/372  Ram=42
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄcos  0/372  Ram=42
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ÃÄsin  0/38  Ram=5
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ÃÄsin  0/38  Ram=5
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ÃÄsqrt  0/212  Ram=19
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ÀÄ@FLT  0/104  Ram=58
+   ³     ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ÃÄsqrt  0/212  Ram=19
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄatan2  0/322  Ram=15
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ³  ÃÄatan  0/452  Ram=18
+   ³     ³  ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ³  ÃÄ@FLT  0/104  Ram=58
+   ³     ³  ³  ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ³  ³  ÃÄ@DIVFF  0/202  Ram=58
+   ³     ³  ³  ³  ÀÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ÃÄatan  0/452  Ram=18
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ÃÄatan  0/452  Ram=18
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄ@ADDFF  0/426  Ram=59
+   ³     ³  ³  ÀÄatan  0/452  Ram=18
+   ³     ³  ³     ÀÄ*
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÃÄ@SITOF  0/74  Ram=127
+   ³     ³  ÃÄ@MULFF  0/196  Ram=59
+   ³     ³  ÀÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@FLT  0/104  Ram=58
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@DIVFF  0/202  Ram=58
+   ³     ÃÄ@ADDFF  0/426  Ram=59
+   ³     ÃÄ@DIVFF  0/202  Ram=58
+   ³     ÀÄ@FLT  0/104  Ram=58
+   ÃÄgps_rx  0/252  Ram=0
+   ³  ÃÄ@const1708  0/26  Ram=0
+   ³  ÃÄtimed_getc  0/60  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³  ÀÄ@const1713  0/18  Ram=0
+   ÃÄpost_data  0/246  Ram=1
+   ³  ÃÄcip_start  0/222  Ram=1
+   ³  ³  ÃÄstrncpy  0/56  Ram=8
+   ³  ³  ÃÄ@const1639  0/62  Ram=0
+   ³  ³  ÃÄ@const1639  0/62  Ram=0
+   ³  ³  ÀÄexception  0/266  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄcip_send  0/36  Ram=0
+   ³  ³  ÀÄ@const1641  0/24  Ram=1
+   ³  ÃÄ@const1714  0/22  Ram=0
+   ³  ÃÄack_1  0/32  Ram=2
+   ³  ³  ÀÄtimed_getc  0/60  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄpost  0/14  Ram=0
+   ³  ³  ÃÄcip_send1  0/126  Ram=0
+   ³  ³  ³  ÃÄ@const1643  0/64  Ram=1
+   ³  ³  ³  ÃÄ@F48TO64  0/74  Ram=0
+   ³  ³  ³  ÃÄ@PRINTF_F64_57600_5716_5717R  0/386  Ram=0
+   ³  ³  ³  ³  ÃÄ@MULFF64  0/272  Ram=0
+   ³  ³  ³  ³  ÃÄ@F64TOI64  0/94  Ram=0
+   ³  ³  ³  ³  ÀÄ@DIV6464B  0/148  Ram=0
+   ³  ³  ³  ÃÄ@F48TO64  0/74  Ram=0
+   ³  ³  ³  ÀÄ@PRINTF_F64_57600_5716_5717R  0/386  Ram=0
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄcip_send2  0/116  Ram=0
+   ³  ³  ³  ÃÄ@F48TO64  0/74  Ram=0
+   ³  ³  ³  ÃÄ@PRINTF_F64_57600_5716_5717R  0/386  Ram=0
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³  ³  ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³  ³  ÀÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³  ÀÄcip_send3  0/194  Ram=0
+   ³  ³     ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³     ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³     ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³     ÃÄ@PRINTFU16_57600_5716_5717  0/182  Ram=1
+   ³  ³     ÀÄ@PRINTFU16_57600_5726_5727  0/182  Ram=1
+   ³  ÃÄ@const1715  0/22  Ram=1
+   ³  ÃÄack_1  0/32  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄ@const1716  0/22  Ram=1
+   ³  ÃÄcip_close  0/36  Ram=1
+   ³  ³  ÀÄ@const1673  0/24  Ram=1
+   ³  ÀÄcip_close  0/36  Ram=1
+   ³     ÀÄ*
+   ÃÄpost_data_fail  0/80  Ram=1
+   ³  ÃÄcip_start  0/222  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄcip_close  0/36  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÀÄcip_close  0/36  Ram=1
+   ³     ÀÄ*
+   ÃÄbattery_fail_check  0/98  Ram=2
+   ÃÄrda_isp  0/92  Ram=2
+   ÃÄdefault_isr  0/32  Ram=1
+   ÀÄcni_isr  0/50  Ram=1

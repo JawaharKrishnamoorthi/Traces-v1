@@ -1,0 +1,418 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @FLT.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W1  @SFTOI.P3
+W0 -W3  @SI64TOF48.P4
+W0 -W1  @DIV3232B.P5
+W0      @ITOF.P6
+W0 -W1  @MULFF.P7
+W0L     @SPRINTF.P8
+W0 -W1  @ADDFF.P9
+W0      @PRINTFU16_57600_5716_5717.P10
+W0      @PRINTFU16_57600_5726_5727.P11
+W0 -W3  @FLT64.P12
+W0      @delay_ms1.P13
+W0 -W3  @I64TOF64.P14
+W0 -W2  @FLT48.P15
+W0      @SITOF.P16
+W0 -W2  @F48TOSI64.P17
+W0 -W2  @F48TO64.P18
+W0 -W3  @I64TOF48.P19
+W0 -W3  @SI64TOF64.P20
+W0 -W2  @MULFF48.P21
+W0 -W3  @ADDFF64.P22
+W0 -W3  @DIV6464B.P23
+W0 -W2  @ADDFF48.P24
+W0      @delay_us1.P25
+W0 -W2  @MULS4848.P26
+W0 -W1  @DIVS3232A.P27
+W0 -W2  @DIVS4848.P28
+W0 -W1  @MULS3232.P29
+W0 -W2  @DIVFF48.P30
+W0 -W3  @MULS6464.P31
+W0 -W3  @F64TOI64.P32
+W0 -W3  @F64TOSI64.P33
+W0 -W3  @MULFF64.P34
+W0 -W1  @DIVFF.P35
+W0 -W1  @MUL3232.P36
+W0 -W3  @PRINTF_F64_57600_5716_5717R.P37
+W0 -W1  @SDTOF.P38
+W0 -W3  @DIVFF64.P39
+W0 -W3  @DIVS6464.P40
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2      @READ_ROM_MEMORY.P1
+W2      @READ_PACKED_MEMORY.P2
+W2 -W3  @DIVS3232A.P3
+W2 -W3  @DIV3232B.P4
+W2 -W3  @MULFF.P5
+W2 -W3  @FLT.P6
+W2      @WRITE_PACKED_MEMORY.P7
+W2 -W3  @ADDFF.P8
+W2 -W3  @DIVFF.P9
+W2 -W3  @MULS3232.P10
+W2 -W3  @MUL3232.P11
+W3 -W5  @DIVFF48.P1
+W3      @WRITE_PACKED_MEMORY.P2
+W3      @READ_ROM_MEMORY.P3
+W3      @READ_PACKED_MEMORY.P4
+W3 -W5  @MULFF48.P5
+W3 -W5  @FLT48.P6
+W3 -W5  @MULS4848.P7
+W3 -W5  @ADDFF48.P8
+W3 -W5  @DIVS4848.P9
+W4 -W7  @FLT64.P1
+W4 -W7  @MULFF64.P2
+W4      @PRINTFU16_57600_5716_5717.P3
+W4 -W7  @ADDFF64.P4
+W4      @PRINTFU16_57600_5726_5727.P5
+W4 -W7  @DIV6464B.P6
+W4 -W7  @DIVFF64.P7
+W4 -W7  @DIVS6464.P8
+W4 -W7  @MULS6464.P9
+W9 -W10 @PRINTF_F64_57600_5716_5717R.P1
+630.6   C1OUT
+630.7   C2OUT
+800-801 @CURRENT_TASK
+802-803 @HNS_PER_TICK
+804-805 strtok.save
+806-82D pas_64
+82E-855 qas_64
+856-885 pat_64
+886-8B5 qat_64
+8B6-8B9 _Randseed
+8BA-8BB rs232_errors
+8BC.0   timeout_error
+8BC.1   timeout_error_2
+8BC.2   last_a
+8BC.3   last_a4
+8BC.4   p_s
+8BD     j
+8BE     post_var
+8BF     init_var
+8C0     nd
+8C1     v3
+8C2-8DF string2
+8E0-8FD string6
+8FE     num_attempt
+8FF     set
+900     enter
+901     sent
+902     lf
+903     buf_var
+904-906 ACK_OK
+907     cmp_val
+908-919 APN_RE
+91A-92A STATUS_RE
+92B     p_status
+92C-937 STATUS_CON
+938-93F GSM_STATE
+940-947 GSM_STATE_R
+948-9B5 string3
+9B6-9B7 ptr
+9B8-9B9 term
+9BA-9BB lat
+9BC-9BD lon
+9BE-9BF s_time
+9C0-9C1 s_date
+9C2-9C3 s_date1
+9C4-9C5 speed_k
+9C6-9D9 string
+9DA     dir
+9DB     jl
+9DC     jm
+9DD     p_hrs
+9DE     ack_log
+9DF     ack_log1
+9E0     sec
+9E2-9E3 old_min
+9E4-9E5 old_sec
+9E6-9E7 new_min
+9E8-9E9 new_sec
+9EA-9EB date
+9EC-9ED month
+9EE-9EF year
+9F0-9F1 v1
+9F2-9F3 post_fail_count
+9F4-9F7 yy
+9F8-9FB f_time
+9FC-9FF i_date
+A00-A05 s_date_time
+A06-A09 timeout
+A0A-A0D timeout_v
+A0E-A11 timeout_3
+A12-A15 r_boot
+A16-A19 v4
+A1A-A1D v5
+A1E-A21 f_lat
+A22-A25 f_lon
+A26-A29 new_hrs
+A2A-A2D old_hrs
+A2E-A31 v6
+A32-A35 old_la
+A36-A39 old_ln
+A3A-A3D new_la
+A3E-A41 new_ln
+A42-A45 distt
+A46-A49 speed
+A4A-A53 stats
+A54-A65 @TASKINFO1_4_4_8_0
+A66-A77 @TASKINFO2_4_4_8_0
+A78-A89 @TASKINFO3_4_4_8_0
+A8A-A9B @TASKINFO4_4_4_8_0
+A9C-AAD @TASKINFO5_4_4_8_0
+AAE-ABF @TASKINFO6_4_4_8_0
+AC0-AC1 @sprintf_string
+AC2-AC3 init_gsm.dat
+ACC     process.clng
+ACD     process.ip
+ACE-B3B process.sstring
+B3C-B43 process.nmea
+B44-B4A process.nmea1
+B4C-B52 process.nmea2
+B54-B5A process.nmea3
+B5C-B5D strtof48.s
+B5C-B5D strtok.s1
+B5C-B5D atoi48.s
+B5C-B5F distance.lat1
+B5C-B5D atol.s
+B5E-B5F strtof48.endptr
+B5E     atoi48.sign
+B5E-B5F strtok.s2
+B5E     atol.c
+B5F     atoi48.base
+B60-B61 strtok.beg
+B60-B63 distance.lon1
+B60     atoi48.index
+B60-B63 atol.result
+B60.0   strtof48.skip
+B60.1   strtof48.sign
+B60.2   strtof48.point
+B61     strtof48.c
+B61     atoi48.c
+B62-B67 atoi48.result
+B62     strtof48.ptr
+B62-B63 strtok.end
+B64-B69 strtof48.pow10
+B64-B65 atol.sign
+B64-B67 distance.lat2
+B66-B67 strspn.s1
+B66-B67 strlen.s
+B66-B67 strpbrk.s1
+B66-B67 atol.base
+B68-B6B distance.lon2
+B68-B69 strlen.sc
+B68-B69 strpbrk.s2
+B68-B69 atol.index
+B68-B69 strspn.s2
+B6A-B6F strtof48.result
+B6A-B6B strpbrk.sc1
+B6A-B6B strspn.sc1
+B6C-B6D strpbrk.sc2
+B6C     distance.unit
+B6C-B6D strspn.sc2
+B6E-B71 distance.dlat
+B72-B75 distance.dlon
+B76-B79 distance.a
+B7A-B7D distance.c
+B7E-B81 distance.d
+B82-B83 distance.r
+B8C-B8F sqrt.x
+B8C-B8F atan2.y
+B90-B93 sin.x
+B90-B93 atan2.x
+B90-B93 sqrt.y
+B94.0   atan2.sign
+B94-B97 sqrt.res
+B95     atan2.quad
+B96-B99 atan2.z
+B98-B9B cos.x
+B98-B99 sqrt.data1
+B9A-B9D atan.x
+B9A-B9B sqrt.data2
+B9C-B9D sqrt.p
+B9C     cos.quad
+B9D     cos.i
+B9E.0   atan.s
+B9E-BA1 cos.y
+B9E.1   atan.flag
+BA0-BA3 atan.y
+BA2-BA5 cos.t
+BA4-BA7 atan.res
+BA6-BA9 cos.t2
+BA8-BAB atan.r
+BAA-BAD cos.frac
+BAE-BC1 cos.p
+C48     ack_1.dat
+C50     exception.bb
+C50-C51 strncpy.s1
+C51     exception.cc
+C52-C53 strncpy.s2
+C54-C55 strncmp.s1
+C54-C55 strncpy.n
+C56-C57 strncmp.s2
+C56-C57 strncpy.s
+C58-C59 strncmp.n
+C58.0   battery_fail_check.x
+C58.1   battery_fail_check.x1
+C6E     rda_isp.vv3
+2700-27FF Stack
+
+ROM Allocation:
+000200  @const1621.call
+000214  @const1622.call
+00022C  @const1623.call
+000244  @const1624.call
+000260  @const1625.call
+00027C  @const1626.call
+000298  @const1627.call
+0002B0  @const1628.call
+0002CC  @const1629.call
+0002E2  @const1639.call
+000320  @const1641.call
+000338  @const1643.call
+000378  @const1673.call
+000390  @const1705.call
+0003A6  @const1706.call
+0003BC  @const1708.call
+0003D6  @const1713.call
+0003E8  @const1714.call
+0003FE  @const1715.call
+000414  @const1716.call
+00042A  @const1728.call
+000440  @const1729.call
+000456  @const1730.call
+00046C  @const1731.call
+000482  @const1732.call
+000498  @const1733.call
+0004AE  @const1734.call
+0004C6  @const1742.call
+0004D4  strncpy
+00050C  @PRINTFU16_57600_5726_5727
+0005C2  @GETCH_BIU_2
+0005D0  timed_getc
+00060C  strncmp
+000654  exception
+00075E  init_gsm
+0009E0  boot
+000A66  strlen
+000A82  strspn
+000AC4  strpbrk
+000AFC  strtok
+000B5C  @MULFF48
+000C2A  @SI64TOF48
+000C94  @DIVFF48
+000D6A  @ADDFF48
+000F46  strtof48
+0010EA  atoi48
+00136E  @DIVS4848
+001410  NMEA_GPRMC
+001536  @MULS3232
+001578  atol
+001762  NMEA_GPGLL
+0017E2  NMEA_GPGGA
+001862  NMEA_GPVTG
+00188E  @DIVS3232A
+00190C  @SITOF
+001956  @DIVFF
+001A20  @ADDFF
+001BCA  @FLT
+001C32  @MULFF
+001CF6  @SFTOI
+001D22  @ITOF
+001D5C  cos
+001ED0  sin
+001EF6  sqrt
+001FCA  atan
+00218E  atan2
+0022D0  distance
+002482  process
+0028E8  process_data
+002902  gps_rx
+0029FE  cip_start
+002ADC  cip_send
+002B00  ack_1
+002B20  @F48TO64
+002B6A  @MULFF64
+002C7A  @F64TOI64
+002CD8  @DIV6464B
+002D6C  @PRINTF_F64_57600_5716_5717R
+002EEE  cip_send1
+002F6C  @PRINTFU16_57600_5716_5717
+003022  cip_send2
+003096  cip_send3
+003158  post
+003166  cip_close
+00318A  post_data
+003280  post_data_fail
+0032D0  battery_fail_check
+003332  rda_isp
+00338E  default_isr
+0033AE  cni_isr
+0033E0  @delay_ms1
+0033F0  @cinit1
+0033F0  MAIN
+0034EE  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    F:\products\gps tracker\traces\Traces-v1\
+
+Project Files:
+    tracking_11_808.c                                       [07-Aug-17 11:41  CRC=C93574F1]
+    C:\Program Files (x86)\PICC\Devices\24fj64ga002.h       [21-Jul-17 14:56  CRC=962A74D0]
+    gsm_7.h                                                 [07-Aug-17 07:52  CRC=0232E439]
+    C:\Program Files (x86)\PICC\Drivers\string.h            [26-Mar-15 13:34  CRC=C4814297]
+    C:\Program Files (x86)\PICC\Drivers\stddef.h            [05-Sep-14 12:47  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\Drivers\ctype.h             [03-Jan-08 15:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [22-Sep-16 09:36  CRC=9CF8C837]
+    C:\Program Files (x86)\PICC\Drivers\stdlib.h            [29-Jun-16 10:34  CRC=7E9CC16B]
+
+Source signature=76E249A9
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=8874
+
+Units:
+    tracking_11_808 (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ64GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Compile Mode:       CCS5
+
+Compiler operating in Evaluation Mode
+To obtain a fully enabled compiler visit www.ccsinfo.com/products
+
+Task Info:
+    Ticks: 100 ns
+    Cycle: 100 ms
+
+Tasks:
+    boot
+    process_data
+    post_data
+    post_data_fail
+    battery_fail_check
+    gps_rx
+
+Task Schedule:
+
+Output Files:
+    XREF file:   tracking_11_808.xsym
+    Errors:      tracking_11_808.err
+    Ext Symbols: tracking_11_808.esym
+    INHX8:       tracking_11_808.hex
+    Symbols:     tracking_11_808.sym
+    List:        tracking_11_808.lst
+    Debug/COFF:  tracking_11_808.cof
+    Project:     tracking_11_808.ccspjt
+    Call Tree:   tracking_11_808.tre
+    Statistics:  tracking_11_808.STA
